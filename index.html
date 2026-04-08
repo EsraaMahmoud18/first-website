@@ -1,31 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-    /* TODO: Add your navbar styles here */
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0077b6;
+        padding: 10px 20px;
+      }
 
-    .content {
-      padding: 40px;
-    }
-  </style>
-</head>
-<body>
+      .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+      }
 
-  <!-- TODO: Add your navbar here -->
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
 
-  <div class="content">
-    <h1>Welcome to My Website</h1>
-    <p>This is the home page.</p>
-  </div>
+      .nav-links li {
+        display: inline;
+      }
 
-</body>
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #90e0ef;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .nav-links {
+          display: none;
+        }
+      }
+      /* TODO: Add your navbar styles here */
+
+      .content {
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TODO: Add your navbar here -->
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Navbar</title>
+        <style>
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+          }
+
+          /* Navbar */
+          .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0077b6;
+            padding: 10px 20px;
+          }
+
+          .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+          }
+
+          .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+          }
+
+          .nav-links li {
+            display: inline;
+          }
+
+          .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+          }
+
+          .nav-links a:hover {
+            color: #90e0ef;
+          }
+
+          /* Responsive */
+          @media (max-width: 600px) {
+            .nav-links {
+              display: none;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <nav class="navbar">
+          <div class="logo">MySite</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+          <h1>Welcome to My Website</h1>
+          <p>This is the home page.</p>
+        </div>
+      </body>
+    </html>
+  </body>
 </html>
